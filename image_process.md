@@ -118,7 +118,8 @@ RGB has color space while RAW does not.
 
 > Sobel Operator
 >
-> > To detect the edge, more sensitive to the diagonal edge. 
+> > To detect the edge, more sensitive to the diagonal edge.
+> > 
 > > $$
 > > \begin{align}
 > > G_x = 
@@ -135,6 +136,7 @@ RGB has color space while RAW does not.
 > > \end{bmatrix} * A
 > > \end{align}
 > > $$
+> > 
 > > where,
 > >
 > > - $A$ is the input image,
@@ -142,7 +144,8 @@ RGB has color space while RAW does not.
 >
 > Scharr Operator
 >
-> > To detect the rotation symmetry. 
+> > To detect the rotation symmetry.
+> > 
 > > $$
 > > \begin{align}
 > > G_x = \begin{bmatrix}
@@ -159,7 +162,8 @@ RGB has color space while RAW does not.
 >
 > Prewitt Operator
 >
-> > To detect the edge, more sensitive to horizontal and vertical edges. 
+> > To detect the edge, more sensitive to horizontal and vertical edges.
+> > 
 > > $$
 > > \begin{align}
 > > G_x = \begin{bmatrix}
