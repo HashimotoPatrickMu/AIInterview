@@ -1,6 +1,6 @@
 ## Convolutions
 
-> Depthwise Conv
+> **Depthwise Conv**
 >
 > > For an input tensor with $C$ channels, depthwise convolution applies a separate single-channel filter to each input channel. Thus, if the input tensor has $C$ channels, there will be $C$​ filters, and each filter is applied to its respective input channel.
 > >
@@ -21,7 +21,7 @@
 > >                            groups=in_channels)
 > > ```
 >
-> Pointwise Conv & $1\times1$ Conv & Separable Conv
+> **Pointwise Conv & $1\times1$ Conv & Separable Conv**
 >
 > > $1\times1$ represents kernel size. 
 > >
@@ -38,7 +38,7 @@
 > >
 > > For visualization, please refer [HERE](https://medium.com/@zurister/depth-wise-convolution-and-depth-wise-separable-convolution-37346565d4ec). 
 >
-> Deconvolution (ConvTranspose2d) & PixelShuffle
+> **Deconvolution (ConvTranspose2d) & PixelShuffle**
 >
 > > Shortcomings of Deconvolution
 > >
@@ -48,15 +48,15 @@
 > >
 > > PixelShuffle: Upscales by rearranging the tensor. 
 >
-> Kernel Size
+> **Kernel Size**
 >
 > > Empirically $(3,3)$ and $(5,5)$ are common choices for image related tasks. While in deep neural networks inputs high-resolution images, a series of descending kernel size perform better, for instance $(7,7)$ to $(5,5)$ to $(3,3)$. 
 >
-> Factorized Convolution
+> **Factorized Convolution**
 >
 > > A $(n,n)$ convolution kernel can be decomposed into $(1,n),(n,1)$​, determining horizontal and vertical features, respectively. 
 >
-> Dropout in Conv
+> **Dropout in Conv**
 >
 > > Dropout the output feature map. 
 > >
@@ -66,7 +66,7 @@
 > >
 > > Mask a contiguous region on the input feature map. 
 >
-> Upsampling (non-leanable) Followed by Convolution
+> **Upsampling (non-leanable) Followed by Convolution**
 >
 > > Smooths out the upscaled image.
 
@@ -76,30 +76,30 @@
 
 ## Pooling
 
->MaxPool
+> **MaxPool**
 >
->> Only the neurons that contributed the maximum value during the forward pass receive the gradient, while all other neurons in the pooling region receive a gradient of zero.
->>
->> Remember the maximum location => Apply the gradient to the maximum => Zero-out the other gradients. 
+> > Only the neurons that contributed the maximum value during the forward pass receive the gradient, while all other neurons in the pooling region receive a gradient of zero.
+> >
+> > Remember the maximum location => Apply the gradient to the maximum => Zero-out the other gradients. 
 >
->Functionality
+> **Functionality**
 >
->> Reduce the computational complexity.
->>
->> Increase receptive field. 
->>
->> Prevent overfitting. 
+> > Reduce the computational complexity.
+> >
+> > Increase receptive field. 
+> >
+> > Prevent overfitting. 
 >
 
 ---
 
 ## Architecture
 
-> [ShuffleNet](https://medium.com/syncedreview/shufflenet-an-extremely-efficient-convolutional-neural-network-for-mobile-devices-72c6f5b01651)
+> [**ShuffleNet**](https://medium.com/syncedreview/shufflenet-an-extremely-efficient-convolutional-neural-network-for-mobile-devices-72c6f5b01651)
 >
-> Attention
+> **Attention**
 > 
-> ResNet
+> **ResNet**
 > 
 > > Residual connection / Skip connection. 
 >>
@@ -107,8 +107,8 @@
 >>
 > > Solves the gradient vanishing problem and allows the neural network to go deeper. 
 >
-> [Graph Neural Networks](https://distill.pub/2021/gnn-intro/)
+> [**Graph Neural Networks**](https://distill.pub/2021/gnn-intro/)
 > 
 > **TO BE CONTINUED~** :hugs:
 > 
-> UNet 
+> **UNet** 
