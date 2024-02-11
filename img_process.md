@@ -87,11 +87,11 @@
 > > - $I$ is the pixel intensity, normalized into $[0,1]$
 > > - $\gamma$ defines the curve for mapping
 >
-> Unsharp Masking
+> <a id="anchor"></a>Unsharp Masking 
 >
 > > $$
 > > \begin{align}
-> > I_{\text{sharpened}} = I_{\text{img}}+\alpha\cdot(I_{\text{img}} -I_{\text{blur}}) \label{eq8}
+> > I_{\text{sharpened}} = I_{\text{img}}+\alpha\cdot(I_{\text{img}} -I_{\text{blur}})
 > > \end{align}
 > > $$
 > >
@@ -102,7 +102,7 @@
 >
 > High Boost Filtering
 >
-> > Refer to $\ref{eq8}$. 
+> > Refer to <a href="#anchor">Unsharp Masking</a>.
 
 ---
 
