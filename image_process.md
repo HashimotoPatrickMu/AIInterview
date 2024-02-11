@@ -12,7 +12,7 @@
 >
 > > $$
 > > \begin{align}
-> > \hat{f}(x,y)=\frac{1}{mn}\sum_{(s,t)\in\mathbb{S}_{xy}}g(s,t)
+> > \hat{f}(x,y)=\frac{1}{mn}\sum_{(s,t)\in\mathbb{S}_{xy}}g(s,t) \tag{1}
 > > \end{align}
 > > $$
 > >
@@ -24,7 +24,7 @@
 >
 > > $$
 > > \begin{align}
-> > \hat{f}(x,y) = \text{median}\{g(s,t) \mid (s,t) \in \mathbb{S}_{xy}\}
+> > \hat{f}(x,y) = \text{median}\{g(s,t) \mid (s,t) \in \mathbb{S}_{xy}\} \tag{2}
 > > \end{align}
 > > $$
 >
@@ -32,7 +32,7 @@
 >
 > > $$
 > > \begin{align}
-> > G(x,y) = \frac{1}{2\pi\sigma^2} \exp\left(-\frac{x^2 + y^2}{2\sigma^2}\right)
+> > G(x,y) = \frac{1}{2\pi\sigma^2} \exp\left(-\frac{x^2 + y^2}{2\sigma^2}\right) \tag{3}
 > > \end{align}
 > > $$
 > >
@@ -44,7 +44,7 @@
 > > 
 > > $$
 > > \begin{align}
-> > CWT(a,b) = \frac{1}{\sqrt{|a|}} \int_{-\infty}^{\infty} f(t) \psi\left(\frac{t-b}{a}\right) dt
+> > CWT(a,b) = \frac{1}{\sqrt{|a|}} \int_{-\infty}^{\infty} f(t) \psi\left(\frac{t-b}{a}\right) dt \tag{4}
 > > \end{align}
 > > $$
 > > 
@@ -52,7 +52,7 @@
 > > 
 > > $$
 > > \begin{align}
-> > DWT_{jk} = \sum_{n} f[n] \cdot \psi_{jk}[n]
+> > DWT_{jk} = \sum_{n} f[n] \cdot \psi_{jk}[n] \tag{5}
 > > \end{align}
 > > $$
 > > 
@@ -72,7 +72,7 @@
 >
 > > $$
 > > \begin{align}
-> > s_k = \text{round}\left(\frac{(L-1) \cdot \text{CDF}(r_k)}{\text{max}(\text{CDF})}\right)
+> > s_k = \text{round}\left(\frac{(L-1) \cdot \text{CDF}(r_k)}{\text{max}(\text{CDF})}\right) \tag{6}
 > > \end{align}
 > > $$
 > >
@@ -90,7 +90,7 @@
 >
 > > $$
 > > \begin{align}
-> > I_{\text{gamma}} = I_{\text{img}}^\gamma 
+> > I_{\text{gamma}} = I_{\text{img}}^\gamma \tag{7}
 > > \end{align}
 > > $$
 > >
@@ -103,7 +103,7 @@
 >
 > > $$
 > > \begin{align}
-> > I_{\text{sharpened}} = I_{\text{img}}+\alpha\cdot(I_{\text{img}} -I_{\text{blur}})
+> > I_{\text{sharpened}} = I_{\text{img}}+\alpha\cdot(I_{\text{img}} -I_{\text{blur}}) \tag{8}
 > > \end{align}
 > > $$
 > >
@@ -137,7 +137,7 @@
 > > -1 & -2 & -1 \\
 > > 0 & 0 & 0 \\
 > > 1 & 2 & 1
-> > \end{bmatrix} * A
+> > \end{bmatrix} * A \tag{9}
 > > \end{align}
 > > $$
 > > 
@@ -160,7 +160,7 @@
 > > -3 & -10 & -3 \\
 > > 0 & 0 & 0 \\
 > > 3 & 10 & 3
-> > \end{bmatrix} * A
+> > \end{bmatrix} * A \tag{10}
 > > \end{align}
 > > $$
 >
@@ -180,7 +180,7 @@
 > > 0 & 0 & 0 \\
 > > 1 & 1 & 1
 > > \end{bmatrix} * A
-> > \end{align}
+> > \end{align} \tag{11}
 > > $$
 >
 > **Canny Edge Detector**
