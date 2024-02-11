@@ -1,4 +1,4 @@
-## image denoising
+## Image Denoising
 
 > mean filter
 > 
@@ -13,7 +13,7 @@
 
 ---
 
-## image enhancement
+## Image Enhancement
 
 > histogram equalization
 > 
@@ -27,7 +27,7 @@
 
 ---
 
-## edge detection operators
+## Edge Detection Operators
 
 > sobel operator
 > 
