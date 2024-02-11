@@ -56,15 +56,53 @@
 
 ## Image Enhancement
 
-> histogram equalization
-> 
-> adaptive histogram equalization
-> 
-> gamma correction
-> 
-> unsharp masking
-> 
-> high boost filtering
+> Histogram Equalization
+>
+> > $$
+> > \begin{align}
+> > s_k = \text{round}\left(\frac{(L-1) \cdot \text{CDF}(r_k)}{\text{max}(\text{CDF})}\right)
+> > \end{align}
+> > $$
+> >
+> > where, 
+> >
+> > - $L$ is the number of possible intensity levels, 
+> > - $\text{CDF}(r_k)$ is the CDF for intensity level $r_k$, 
+> > - $\text{max}(\text{CDF})$ ensures normalization by the maximum CDF value.
+>
+> Adaptive Histogram Equalization
+>
+> > It divides the image into patches and applies Histogram Equalization on each, then mitigates the boundaries to avoid the abrupt difference. 
+>
+> Gamma Correction
+>
+> > $$
+> > \begin{align}
+> > I_{\text{gamma}} = I_{\text{img}}^\gamma 
+> > \end{align}
+> > $$
+> >
+> > where,
+> >
+> > - $I$ is the pixel intensity, normalized into $[0,1]$
+> > - $\gamma$ defines the curve for mapping
+>
+> Unsharp Masking
+>
+> > $$
+> > \begin{align}
+> > I_{\text{sharpened}} = I_{\text{img}}+\alpha\cdot(I_{\text{img}} -I_{\text{blur}}) \label{eq8}
+> > \end{align}
+> > $$
+> >
+> > where, 
+> >
+> > - $I_{\text{blur}}$​ is the pixel intensity of the blurred image, 
+> > - $\alpha$ is the scaling factor. 
+>
+> High Boost Filtering
+>
+> > Refer to $\ref{eq8}$. 
 
 ---
 
@@ -79,3 +117,6 @@
 > canny edge detector
 > 
 > laplacian of gaussian
+
+
+
