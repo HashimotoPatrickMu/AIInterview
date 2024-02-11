@@ -52,5 +52,68 @@
 >
 > > Empirically $(3,3)$ and $(5,5)$ are common choices for image related tasks. While in deep neural networks inputs high-resolution images, a series of descending kernel size perform better, for instance $(7,7)$ to $(5,5)$ to $(3,3)$. 
 >
-> 
+> Factorized Convolution
+>
+> > A $(n,n)$ convolution kernel can be decomposed into $(1,n),(n,1)$​, determining horizontal and vertical features, respectively. 
+>
+> Dropout in Conv
+>
+> > Dropout the output feature map. 
+> >
+> > Dropout some channels of input feature map. 
+> >
+> > Randomly zero-mask the kernel. 
+> >
+> > Mask a contiguous region on the input feature map. 
+>
+> Upsampling (non-leanable) Followed by Convolution
+>
+> > Smooths out the upscaled image.
 
+
+
+---
+
+## Pooling
+
+>MaxPool
+>
+>> Only the neurons that contributed the maximum value during the forward pass receive the gradient, while all other neurons in the pooling region receive a gradient of zero.
+>>
+>> Remember the maximum location => Apply the gradient to the maximum => Zero-out the other gradients. 
+>
+>Functionality
+>
+>> Reduce the computational complexity.
+>>
+>> Increase receptive field. 
+>>
+>> Prevent overfitting. 
+
+---
+
+## Architecture
+
+> ShuffleNet
+>
+> > For better explanation, please refer [HERE](https://medium.com/syncedreview/shufflenet-an-extremely-efficient-convolutional-neural-network-for-mobile-devices-72c6f5b01651). 
+> >
+> > <img src="./graphics/shufflenet_0.png" alt="shufflenet_0" style="zoom: 67%;" />
+> >
+> > <img src="/home/mumu/AIInterview/graphics/shufflenet_1.png" alt="shufflenet_1" style="zoom:58%;" />
+>
+> Attention
+>
+> ResNet
+>
+> > Residual connection / Skip connection. 
+> >
+> > Bottleneck structure. 
+> >
+> > Solves the gradient vanishing problem and allows the neural network to go deeper. 
+>
+> [Graph Neural Networks](https://distill.pub/2021/gnn-intro/)
+>
+> **TO BE CONTINUED~** :hugs:
+>
+> UNet 
