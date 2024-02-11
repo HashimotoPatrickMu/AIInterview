@@ -191,9 +191,9 @@
 
 ## Implementation
 
-> [Mosaic Algorithm](implementations/filters/mosaic.py)
+> [**Mosaic Algorithm**](implementations/filters/mosaic.py)
 >
-> [Gaussian Blur](implementations/filters/gaussian_blur.py)
+> [**Gaussian Blur**](implementations/filters/gaussian_blur.py)
 >
-> [Average & Median Filter](implementations/filters/average_median.py)
+> [**Average & Median Filter**](implementations/filters/average_median.py)
 
