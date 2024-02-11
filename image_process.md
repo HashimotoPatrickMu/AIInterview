@@ -40,18 +40,22 @@
 >
 > Wavelet Transform
 >
-> > continuous, 
+> > continuous,
+> > 
 > > $$
 > > \begin{align}
 > > CWT(a,b) = \frac{1}{\sqrt{|a|}} \int_{-\infty}^{\infty} f(t) \psi\left(\frac{t-b}{a}\right) dt
 > > \end{align}
 > > $$
-> > discrete, 
+> > 
+> > discrete,
+> > 
 > > $$
 > > \begin{align}
 > > DWT_{jk} = \sum_{n} f[n] \cdot \psi_{jk}[n]
 > > \end{align}
 > > $$
+> > 
 > > where, 
 > >
 > > - $\psi(\cdot)$ is the wavelet function.
