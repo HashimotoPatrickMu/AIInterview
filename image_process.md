@@ -1,8 +1,8 @@
-HOG: Histogram of Oriented Gradients, 
+**HOG**: Histogram of Oriented Gradients, 
 
 > The distribution (histograms) of directions (orientations) of gradients (edge directions) in localized portions of the image. 
 
-RGB has color space while RAW does not. 
+**RGB** has color space while **RAW** does not. 
 
 ---
 
