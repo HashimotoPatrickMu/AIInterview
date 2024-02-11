@@ -1,3 +1,11 @@
+HOG: Histogram of Oriented Gradients, 
+
+> The distribution (histograms) of directions (orientations) of gradients (edge directions) in localized portions of the image. 
+
+RGB has color space while RAW does not. 
+
+---
+
 ## Image Denoising
 
 > Mean Filter
@@ -87,7 +95,7 @@
 > > - $I$ is the pixel intensity, normalized into $[0,1]$
 > > - $\gamma$ defines the curve for mapping
 >
-> <a id="anchor"></a>Unsharp Masking 
+> Unsharp Masking <a id="anchor-0"></a>
 >
 > > $$
 > > \begin{align}
@@ -102,21 +110,82 @@
 >
 > High Boost Filtering
 >
-> > Refer to <a href="#anchor">Unsharp Masking</a>.
+> > Refer to <a href="#anchor-0">Unsharp Masking</a>.
 
 ---
 
 ## Edge Detection Operators
 
-> sobel operator
-> 
-> scharr operator
-> 
-> prewitt operator
-> 
+> Sobel Operator
+>
+> > To detect the edge, more sensitive to the diagonal edge. 
+> > $$
+> > \begin{align}
+> > G_x = 
+> > \begin{bmatrix}
+> > -1 & 0 & 1 \\
+> > -2 & 0 & 2 \\
+> > -1 & 0 & 1
+> > \end{bmatrix} \ast A, 
+> > \quad 
+> > G_y = \begin{bmatrix}
+> > -1 & -2 & -1 \\
+> > 0 & 0 & 0 \\
+> > 1 & 2 & 1
+> > \end{bmatrix} * A
+> > \end{align}
+> > $$
+> > where,
+> >
+> > - $A$ is the input image,
+> > - and $G_x$ and $G_y$ are the outputs represent the horizontal and vertical edge responses
+>
+> Scharr Operator
+>
+> > To detect the rotation symmetry. 
+> > $$
+> > \begin{align}
+> > G_x = \begin{bmatrix}
+> > -3 & 0 & 3 \\
+> > -10 & 0 & 10 \\
+> > -3 & 0 & 3
+> > \end{bmatrix} * A, \quad G_y = \begin{bmatrix}
+> > -3 & -10 & -3 \\
+> > 0 & 0 & 0 \\
+> > 3 & 10 & 3
+> > \end{bmatrix} * A
+> > \end{align}
+> > $$
+>
+> Prewitt Operator
+>
+> > To detect the edge, more sensitive to horizontal and vertical edges. 
+> > $$
+> > \begin{align}
+> > G_x = \begin{bmatrix}
+> > -1 & 0 & 1 \\
+> > -1 & 0 & 1 \\
+> > -1 & 0 & 1
+> > \end{bmatrix} * A, \quad
+> > G_y = \begin{bmatrix}
+> > -1 & -1 & -1 \\
+> > 0 & 0 & 0 \\
+> > 1 & 1 & 1
+> > \end{bmatrix} * A
+> > \end{align}
+> > $$
+>
 > canny edge detector
-> 
+>
 > laplacian of gaussian
 
+---
 
+## Implementation
+
+> [Mosaic Algorithm](implementations/filters/mosaic.py)
+>
+> [Gaussian Blur](implementations/filters/gaussian_blur.py)
+>
+> [Average & Median Filter](implementations/filters/average_median.py)
 
