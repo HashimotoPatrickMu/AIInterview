@@ -98,17 +98,21 @@
 > [**ShuffleNet**](https://medium.com/syncedreview/shufflenet-an-extremely-efficient-convolutional-neural-network-for-mobile-devices-72c6f5b01651)
 >
 > **Attention**
-> 
+>
 > **ResNet**
-> 
+>
 > > Residual connection / Skip connection. 
->>
+> >
 > > Bottleneck structure. 
->>
+> >
 > > Solves the gradient vanishing problem and allows the neural network to go deeper. 
 >
 > [**Graph Neural Networks**](https://distill.pub/2021/gnn-intro/)
-> 
-> **TO BE CONTINUED~** :hugs:
-> 
+>
 > **UNet** 
+>
+> > Contracting Path (Downsampling):  It focuses on capturing high-level, contextual information about the image content.
+> >
+> > Expanding Path (Upsampling): It uses the high-level context from the contracting path and combines it with precise location information to accurately segment the objects.
+>
+> **TO BE CONTINUED~** :hugs:
