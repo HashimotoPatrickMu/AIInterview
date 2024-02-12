@@ -8,7 +8,6 @@
 > > import torch
 > > import torch.nn as nn
 > > 
-> > 
 > > b, h, w, c_in, c_out = 3, 224, 224, 96, 128
 > > kernel_size = (3,3)
 > > 
